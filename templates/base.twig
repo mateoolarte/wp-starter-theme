@@ -1,0 +1,24 @@
+{% block html_head_container %}
+  {% include 'layout/head.twig' %}
+{% endblock %}
+
+<body class="{{ body_class }}" data-template="base.twig">
+  {% block header %}
+    {% include 'layout/header.twig' %}
+  {% endblock %}
+
+  <main class="content-wrapper" role="main">
+    {% block content %}
+      No hay contenido
+    {% endblock %}
+
+    {% if sidebar %}
+      {% include 'layout/sidebar.twig' %}
+    {% endif %}
+  </main>
+
+  {% block footer %}
+    {% include 'layout/footer.twig' %}
+  {% endblock %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<h2>Blog</h2>
+
+	{% for post in posts %}
+    {% include 'components/post.twig' %}
+	{% endfor %}
+{% endblock %}
