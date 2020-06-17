@@ -20,13 +20,11 @@ We create this starter to have a boilerplate for all themes that have been creat
 * [stylelint](https://stylelint.io/) CSS Linter
 * [ESlint](https://eslint.org/) JS Linter
 * [prettier](https://prettier.io/) Code formatter
-* [freemius](https://freemius.com/) Manage premium features
 
 ## File structure
 
 ```text
 starter-theme/
-├── freemius/               Freemius SDK
 ├── inc/                    PHP & WP configuration files
 │   ├── dependencies/       Third-party libs like plugins
 │   ├── customizer.php      Customizer API config
