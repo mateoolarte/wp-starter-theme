@@ -1,21 +1,21 @@
 # WP Starter Theme
 
 Starter Theme is a WordPress theme with a basic scaffolding to make custom themes.
-Inside you found many tools for make easier your development process.
+Inside you found many tools that make easier your development process.
 
 ## Features
 
-- [yarn](https://yarnpkg.com/lang/en/) Package manager
 - [WordPress](https://wordpress.org/) Basic scaffolding
-- [TGMP](http://tgmpluginactivation.com/) WordPress plugin dependencies management
-- [webpack](https://webpack.js.org/) module bundler
-- [gulpjs](http://gulpjs.com/) Tasks integration
-- [autoprefixer](https://github.com/postcss/autoprefix) Add vendor prefixes to CSS code.
-- [browser-sync](https://www.browsersync.io/) Local auto reload server.
-- [sass](https://sass-lang.com/guide) Preprocessor for CSS.
-- [stylelint](https://stylelint.io/) CSS Linter
+- [TGMP](http://tgmpluginactivation.com/) WordPress plugin dependency management
+- [Yarn](https://yarnpkg.com/lang/en/) Package manager
+- [Webpack](https://webpack.js.org/) module bundler
+- [GulpJS](http://gulpjs.com/) Tasks integration
+- [Autoprefixer](https://github.com/postcss/autoprefix) Add vendor prefixes to CSS code
+- [Browser-sync](https://www.browsersync.io/) Local auto reload server
+- [SASS](https://sass-lang.com/guide) Preprocessor for CSS
+- [Stylelint](https://stylelint.io/) CSS Linter
 - [ESlint](https://eslint.org/) JS Linter
-- [prettier](https://prettier.io/) Code formatter
+- [Prettier](https://prettier.io/) Code formatter
 - [lint-staged](https://github.com/okonet/lint-staged) Git hooks with lint-staged and Husky to lint and formatter code
 
 ## File structure
@@ -53,22 +53,20 @@ starter-theme/
 └── yarn.lock               Cache file to keep consistent on JS dependencies
 ```
 
-## How to use?
+## Getting started
 
-### Initial setup
-
-Create a WordPress installation or use an existing installation of [wordpress.org](https://wordpress.org/download/). We recommend to use [Local by Flywheel](https://localbyflywheel.com/) software.
+Create a WordPress installation or use an existing installation of [wordpress.org](https://wordpress.org/download/). I recommend to use [Local by Flywheel](https://localbyflywheel.com/) software.
 
 Clone this repo on your themes folder **`wp-content/themes/`**
 
 ```sh
-git clone git@github.com:mateoolarte/timber-starter-theme.git
+git clone git@github.com:mateoolarte/wp-starter-theme.git
 ```
 
 **Recommended config:** You can pass a second argument with a custom folder name like this:
 
 ```sh
-git clone git@github.com:mateoolarte/timber-starter-theme.git CUSTOM-NAME
+git clone git@github.com:mateoolarte/wp-starter-theme.git CUSTOM-NAME
 ```
 
 Change the **`proxy`** value on `package.json` with your local URL or if you use [Local by Flywheel](https://localbyflywheel.com/) this provided a local URL.
@@ -79,21 +77,21 @@ Update meta info on `styles.css` file.
 
 Run the following command to install dependencies:
 
-For JS dependencies
-
-Note: You should have installed [yarn](https://yarnpkg.com/getting-started/install) otherwise the will not work
+JS dependencies
 
 ```sh
 yarn
 ```
 
-For PHP dependencies
+Note: You should have installed [yarn](https://yarnpkg.com/getting-started/install) otherwise this will not work
 
-Note: You should have installed [composer](https://getcomposer.org/download/) and add to the [PATH](https://getcomposer.org/doc/00-intro.md)
+PHP dependencies
 
 ```sh
 composer install
 ```
+
+Note: You should have installed [composer](https://getcomposer.org/download/) and add to the [PATH](https://getcomposer.org/doc/00-intro.md)
 
 ### Development tasks
 

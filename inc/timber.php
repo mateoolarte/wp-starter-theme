@@ -21,15 +21,18 @@ Timber::$dirname = 'templates';
 
 class WPsite extends Timber\Site {
 	public function __construct() {
-    add_action('after_setup_theme', 'theme_setup');
-		add_filter('timber/context', array($this, 'add_to_context'));
+    parent::__construct();
+
+    add_filter('timber/context', array($this, 'add_to_context'));
     add_filter('timber/twig', array($this, 'add_to_twig' ));
-    add_action('wp_enqueue_scripts', 'add_theme_assets');
+
+    add_action('after_setup_theme', 'theme_setup');
     add_action('tgmpa_register', 'register_required_plugins');
-    add_action('customize_register', 'customize_register_section');
+    add_action('customize_register', 'customize_sections');
+    add_action('wp_enqueue_scripts', 'theme_assets');
+
     // add_action('init', array($this, 'register_post_types'));
     // add_action('init', array($this, 'register_taxonomies'));
-		parent::__construct();
 	}
 
 	function add_to_context( $context ) {

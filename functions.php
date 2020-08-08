@@ -7,13 +7,13 @@ if (file_exists($composer_autoload)) {
 	$timber = new Timber\Timber();
 }
 
-require_once 'inc/timber.php';
-
-// Initial Wordpress setup
+// Initial setup
 require_once 'inc/setup.php';
 
 // TGM Dependencies
 require_once 'inc/dependencies/index.php';
 
-// Example Wordpress customizer
+// Customizer
 require_once 'inc/customizer.php';
+
+require_once 'inc/timber.php';

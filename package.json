@@ -1,19 +1,18 @@
 {
-  "name": "starter-theme",
-  "version": "0.0.1",
+  "name": "wp-starter-theme",
+  "version": "0.0.2",
   "description": "Modern workflow to create themes with Wordpress. You can work with a modern process with Gulp tasks and Webpack JS bundling",
   "main": "gulpfile.js",
-  "proxy": "http://startertheme.local/",
+  "proxy": "http://templates.local/",
   "scripts": {
     "fmt": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,yml,yaml,scss}\"",
     "lint-styles": "stylelint '**/*.scss' --syntax=scss --fix",
     "lint-scripts": "eslint . --ext js,jsx,ts,tsx --fix --max-warnings=0",
-    "lint": "yarn fmt && yarn lint-styles && yarn lint-scripts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "yarn fmt && yarn lint-styles && yarn lint-scripts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mateoolarte/timber-starter-theme.git"
+    "url": "git+https://github.com/mateoolarte/wp-starter-theme.git"
   },
   "keywords": [
     "prettier",
@@ -28,7 +27,7 @@
   ],
   "author": "Mateo Olarte <mateo.olarte8@gmail.com>",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/mateoolarte/timber-starter-theme/blob/master/README.md",
+  "homepage": "https://github.com/mateoolarte/wp-starter-theme/blob/master/README.md",
   "browserslist": [
     "defaults",
     "not IE 11",
@@ -41,15 +40,15 @@
     "node": "<= 12.18.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
-    "autoprefixer": "^9.8.0",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
-    "eslint": "^7.2.0",
+    "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "gulp": "^4.0.2",
@@ -66,14 +65,14 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-wp-pot": "^2.4.3",
-    "gulp-zip": "^5.0.1",
+    "gulp-zip": "^5.0.2",
     "husky": ">=4",
     "lint-staged": ">=10",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
-    "stylelint": "^13.6.0",
+    "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.1",
     "webpack-stream": "^5.2.1"
   },
   "husky": {

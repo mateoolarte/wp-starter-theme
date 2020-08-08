@@ -19,13 +19,12 @@ function theme_setup() {
 
   register_nav_menus(
 		array(
-			'main-menu' => __('Menu Principal'),
-			'footer-menu' => __('Menu Footer')
+			'main-menu' => __('Main menu')
 		)
   );
 }
 
-function add_theme_assets() {
+function theme_assets() {
   wp_enqueue_style('main', get_template_directory_uri().'/assets/css/main.css');
   wp_enqueue_script('main', get_template_directory_uri().'/assets/js/main.js');
 
@@ -33,5 +32,3 @@ function add_theme_assets() {
     wp_enqueue_script( 'comment-reply' );
   }
 }
-
-add_action( 'wp_enqueue_scripts', 'add_theme_assets', 10 );
