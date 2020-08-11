@@ -1,6 +1,6 @@
 {
   "name": "wp-starter-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Modern workflow to create themes with Wordpress. You can work with a modern process with Gulp tasks and Webpack JS bundling",
   "main": "gulpfile.js",
   "proxy": "http://templates.local/",

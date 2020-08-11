@@ -27,10 +27,10 @@ class WPsite extends Timber\Site {
     add_filter('timber/twig', array($this, 'add_to_twig' ));
 
     add_action('after_setup_theme', 'theme_setup');
-    add_action('tgmpa_register', 'register_required_plugins');
     add_action('customize_register', 'customize_sections');
     add_action('wp_enqueue_scripts', 'theme_assets');
 
+    // add_action('tgmpa_register', 'register_required_plugins');
     // add_action('init', array($this, 'register_post_types'));
     // add_action('init', array($this, 'register_taxonomies'));
 	}

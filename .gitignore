@@ -1,9 +1,8 @@
-/cache/
-/assets/
-
-node_modules
+cache
+assets
 dist
 build
+node_modules
 coverage
 tmp
 temp
